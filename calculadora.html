@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body{
+            background-color: rgb(161, 161, 161);
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>CALCULADORA</h1>
+        <hr>
+
+        <h3 > DATA HOJE: <input type="number" name="hoje" id="hoje"></h3>
+        
+        
+        <h3 > DIGITE O VALOR DO PLANO:  <input type="number" name="valor" id="valor"></h3>
+        
+        
+        <h3 >DATA DO VENCIMENTO:  <input type="number" name="vencimento" id="vencimento"></h3>
+
+        <button type="submit" onclick="Clicar()">VALOR</button>  
+
+        <div id="exibir">
+            O VALOR A SER PAGO É:
+        </div>
+        <img src="../KIMNET/CSS/Kimnet.png" alt="logo">
+        <footer>&copy;Fabricio Silva</footer>
+    
+    </div>
+    <script src="interacao.js"></script>
+</body>
+</html>
