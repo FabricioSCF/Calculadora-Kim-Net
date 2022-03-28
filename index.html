@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculadora</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULADORA</title>
+  <link rel="icon" href="https://kimnet.com.br/wp-content/uploads/2021/05/Kimnet.png">
+</head>
+
+<body>
+  <div class="container">
+    <h1>CALCULADORA</h1>
+    <hr>
+
+    <h3> DATA HOJE/ DATA DO PRÓXIMO BOLETO: <input type="date" name="hoje" id="hoje"></h3>
+
+    <h3> DIGITE O VALOR DO PLANO: <input type="number" name="valor" id="valor"></h3>
+
+    <h3>DATA DO VENCIMENTO: <input type="date" name="vencimento" id="vencimento"></h3>
+
+    <button type="submit" onclick="atualizar()" id="atualizarBoleto">ATUALIZAR BOLETO</button>
+    <button type="submit" onclick="negociar()" id="negociar">NEGOCIAR MENSALIDADES</button>
+
+    <div id="exibir">
+      O VALOR A SER PAGO É:
+    </div>
+    <br>
+
+    <img src="https://kimnet.com.br/wp-content/uploads/2021/05/Kimnet.png" alt="logo">
+    <footer>&copy; Fabricio Silva</footer>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
