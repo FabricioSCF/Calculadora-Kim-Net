@@ -51,8 +51,6 @@ function negociar() {
         var res = atraso * juros[0] + valor + 1.3 + 32.5
         exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
     }
-
-    descricao()
 }
 
 
@@ -67,42 +65,5 @@ function calculaDatas() {
     var diffInDays = diffInTime / timeInOnDay
 
     return diffInDays
-
-}
-
-function descricao() {
-
-    var valor = Number(document.getElementById("valor").value)
-    var juros = [0.21, 0.25, 0.28, 0.30, 0.33, 0.40]
-    var atraso = calculaDatas()
-
-    var diaDeUso = Number(document.getElementById("diaDeUso"))
-    var jurosAoDia = Number(document.getElementById("jurosAoDia"))
-    var diasDeAtraso = Number(document.getElementById("diasDeAtraso"))
-    var totalDeJuros = Number(document.getElementById("juros"))
-    var multa = Number(document.getElementById("multa"))
-    var diasDeConsumo15 = Number(document.getElementById("diasDeConsumo15"))
-
-
-    if (valor == 75) {
-        diaDeUso.innerHTML = "R$ 2,50"
-        jurosAoDia.innerHTML = "R$ 0,25"
-        diasDeAtraso.innerHTML = atraso
-    }else if(valor == 85){
-        var res = atraso * juros[2] + valor + 1.7
-        exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
-    }else if(valor == 90){
-        var res = atraso * juros[3] + valor + 1.8
-        exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
-    }else if(valor == 100){
-        var res = atraso * juros[4] + valor + 2
-        exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
-    }else if(valor == 120){
-        var res = atraso * juros[5] + valor + 2.4
-        exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
-    }else if(valor == 65){
-        var res = atraso * juros[0] + valor + 1.3
-        exibicao.innerHTML = `O VALOR A SER PAGO É: R$ ${res}`
-    }
 
 }
